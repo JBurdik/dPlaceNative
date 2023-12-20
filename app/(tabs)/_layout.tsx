@@ -1,53 +1,74 @@
-import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { Link, Tabs } from 'expo-router';
-import { Pressable, useColorScheme } from 'react-native';
+import FontAwesome from "@expo/vector-icons/FontAwesome";
+import { Link, Tabs, useRouter } from "expo-router";
+import { Pressable, useColorScheme } from "react-native";
 
-import Colors from '../../constants/Colors';
+import Colors from "../../constants/Colors";
+import { Ionicons, MaterialIcons } from "@expo/vector-icons";
+import { useContext, useEffect } from "react";
+import AppwriteContext from "../../src/contexts/AppwriteContext";
 
 /**
  * You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
  */
 function TabBarIcon(props: {
-  name: React.ComponentProps<typeof FontAwesome>['name'];
+  name: React.ComponentProps<typeof FontAwesome>["name"];
   color: string;
 }) {
   return <FontAwesome size={28} style={{ marginBottom: -3 }} {...props} />;
 }
 
 export default function TabLayout() {
+  const { isLoggedIn, appwrite } = useContext(AppwriteContext);
+  const router = useRouter();
   const colorScheme = useColorScheme();
+
+  // useEffect(() => {
+  //   if (!isLoggedIn && appwrite) router.push("/");
+  // }, [isLoggedIn, appwrite]);
 
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-      }}>
+        tabBarActiveTintColor: Colors.primary,
+        tabBarStyle: {
+          backgroundColor: "#000",
+        },
+        tabBarLabelStyle: {
+          color: "#ffffff",
+        },
+        tabBarIconStyle: {
+          color: "blue",
+        },
+      }}
+    >
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Tab One',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
-          headerRight: () => (
-            <Link href="/modal" asChild>
-              <Pressable>
-                {({ pressed }) => (
-                  <FontAwesome
-                    name="info-circle"
-                    size={25}
-                    color={Colors[colorScheme ?? 'light'].text}
-                    style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
-                  />
-                )}
-              </Pressable>
-            </Link>
+          title: "Explore",
+          headerStyle: {
+            backgroundColor: "#000",
+          },
+          headerTitleStyle: {
+            color: "#ffffff",
+          },
+          tabBarIcon: ({ color, size }) => (
+            <MaterialIcons name="explore" size={size} color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name="two"
+        name="profile"
         options={{
-          title: 'Tab Two',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: "Profile",
+          headerStyle: {
+            backgroundColor: "#000",
+          },
+          headerTitleStyle: {
+            color: "#ffffff",
+          },
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="person-circle" color={color} size={size} />
+          ),
         }}
       />
     </Tabs>

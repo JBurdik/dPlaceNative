@@ -1,14 +1,20 @@
-import { StyleSheet } from 'react-native';
+import { Button, StyleSheet, View } from "react-native";
 
-import EditScreenInfo from '../../components/EditScreenInfo';
-import { Text, View } from '../../components/Themed';
+import { Link } from "expo-router";
+import { useAppwrite } from "../../src/contexts/AppwriteContext";
+import Colors from "../../constants/Colors";
 
 export default function TabOneScreen() {
+  const { logout, isLoggedIn } = useAppwrite();
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/(tabs)/index.tsx" />
+      {isLoggedIn === false ? (
+        <Link style={styles.button} href="/(modals)/login">
+          Login
+        </Link>
+      ) : (
+        <Button title="Sign out" onPress={() => logout()} />
+      )}
     </View>
   );
 }
@@ -16,16 +22,23 @@ export default function TabOneScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   title: {
     fontSize: 20,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
   separator: {
     marginVertical: 30,
     height: 1,
-    width: '80%',
+    width: "80%",
+  },
+  button: {
+    backgroundColor: Colors.primary,
+    padding: 10,
+    color: "white",
+    letterSpacing: 2,
+    textTransform: "uppercase",
   },
 });
