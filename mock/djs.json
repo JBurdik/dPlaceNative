@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "sex": "male",
+    "email": "john@doe.cz",
+    "avatar": "dj1.jpg",
+    "bio": "I am John Doe, a talented male DJ with a passion for music. Contact me at john@doe.cz for bookings!",
+    "rating": 4.5
+  },
+  {
+    "id": 2,
+    "name": "Peter Packer",
+    "sex": "male",
+    "email": "peter@packer.cz",
+    "avatar": "dj2.jpg",
+    "bio": "Hey there! I'm Peter Packer, a male DJ who knows how to get the party started. Reach out to me at peter@packer.cz!",
+    "rating": 4.2
+  },
+  {
+    "id": 3,
+    "name": "George Somes",
+    "sex": "male",
+    "email": "george@somes.cz",
+    "avatar": "dj3.jpg",
+    "bio": "Greetings! I'm George Somes, a male DJ with a knack for creating an electrifying atmosphere. Contact me at george@somes.cz!",
+    "rating": 4.7
+  },
+  {
+    "id": 4,
+    "name": "Kulisek Kula",
+    "sex": "male",
+    "email": "kulisek@kula.cz",
+    "avatar": "dj4.jpg",
+    "bio": "Hello party people! I'm Kulisek Kula, a male DJ who knows how to keep the dance floor packed. Get in touch with me at kulisek@kula.cz!",
+    "rating": 4.3
+  },
+  {
+    "id": 5,
+    "name": "Jane Smith",
+    "sex": "female",
+    "email": "jane@smith.cz",
+    "avatar": "dj5.jpg",
+    "bio": "Hi everyone! I'm Jane Smith, a female DJ who loves to spin the latest tracks. Feel free to contact me at jane@smith.cz!",
+    "rating": 4.6
+  },
+  {
+    "id": 6,
+    "name": "Emily Johnson",
+    "sex": "female",
+    "email": "emily@johnson.cz",
+    "avatar": "dj6.jpg",
+    "bio": "Hey there, party animals! I'm Emily Johnson, a female DJ who knows how to keep the energy high. Reach out to me at emily@johnson.cz!",
+    "rating": 4.4
+  },
+  {
+    "id": 7,
+    "name": "Sophia Davis",
+    "sex": "female",
+    "email": "sophia@davis.cz",
+    "avatar": "dj7.jpg",
+    "bio": "Greetings, music lovers! I'm Sophia Davis, a female DJ with a passion for creating unforgettable experiences. Contact me at sophia@davis.cz!",
+    "rating": 4.8
+  },
+  {
+    "id": 8,
+    "name": "Olivia Wilson",
+    "sex": "female",
+    "email": "olivia@wilson.cz",
+    "avatar": "dj8.jpg",
+    "bio": "Hello everyone! I'm Olivia Wilson, a female DJ who knows how to make every event a memorable one. Get in touch with me at olivia@wilson.cz!",
+    "rating": 4.1
+  },
+  {
+    "id": 9,
+    "name": "Michael Johnson",
+    "sex": "male",
+    "email": "michael@johnson.cz",
+    "avatar": "dj9.jpg",
+    "bio": "Hey party people! I'm Michael Johnson, a male DJ who knows how to keep the beats pumping. Contact me at michael@johnson.cz!",
+    "rating": 4.9
+  },
+  {
+    "id": 10,
+    "name": "Emma Thompson",
+    "sex": "female",
+    "email": "emma@thompson.cz",
+    "avatar": "dj10.jpg",
+    "bio": "Hi there! I'm Emma Thompson, a female DJ who loves to create a vibrant atmosphere. Feel free to reach out to me at emma@thompson.cz!",
+    "rating": 4.3
+  },
+  {
+    "id": 11,
+    "name": "David Brown",
+    "sex": "male",
+    "email": "david@brown.cz",
+    "avatar": "dj11.jpg",
+    "bio": "Greetings, music enthusiasts! I'm David Brown, a male DJ with a passion for mixing beats. Contact me at david@brown.cz!",
+    "rating": 4.7
+  },
+  {
+    "id": 12,
+    "name": "Isabella Martinez",
+    "sex": "female",
+    "email": "isabella@martinez.cz",
+    "avatar": "dj12.jpg",
+    "bio": "Hello everyone! I'm Isabella Martinez, a female DJ who knows how to keep the dance floor alive. Get in touch with me at isabella@martinez.cz!",
+    "rating": 4.5
+  },
+  {
+    "id": 13,
+    "name": "Daniel Wilson",
+    "sex": "male",
+    "email": "daniel@wilson.cz",
+    "avatar": "dj13.jpg",
+    "bio": "Hey party animals! I'm Daniel Wilson, a male DJ who knows how to create an unforgettable experience. Reach out to me at daniel@wilson.cz!",
+    "rating": 4.2
+  },
+  {
+    "id": 14,
+    "name": "Sophie Anderson",
+    "sex": "female",
+    "email": "sophie@anderson.cz",
+    "avatar": "dj14.jpg",
+    "bio": "Hi everyone! I'm Sophie Anderson, a female DJ who loves to spin the latest tracks. Feel free to contact me at sophie@anderson.cz!",
+    "rating": 4.6
+  },
+  {
+    "id": 15,
+    "name": "Matthew Taylor",
+    "sex": "male",
+    "email": "matthew@taylor.cz",
+    "avatar": "dj15.jpg",
+    "bio": "Greetings, music lovers! I'm Matthew Taylor, a male DJ with a passion for creating electrifying vibes. Contact me at matthew@taylor.cz!",
+    "rating": 4.4
+  }
+]

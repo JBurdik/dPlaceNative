@@ -12,19 +12,21 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.jburdik.dPlaceNative"
+      "bundleIdentifier": "com.jburdik.dPlaceNative",
+      "runtimeVersion": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.jburdik.dPlaceNative"
+      "package": "com.jburdik.dPlaceNative",
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
     },
     "web": {
       "bundler": "metro",
@@ -32,7 +34,14 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Vyberte si fotky z vašeho zařízení",
+          "cameraPermission": "Použijte fotoaparát pro pořízení fotky"
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
@@ -44,6 +53,9 @@
       "eas": {
         "projectId": "34f8319a-d04d-4808-a5a4-3b42bee0fa7f"
       }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/34f8319a-d04d-4808-a5a4-3b42bee0fa7f"
     }
   }
 }
